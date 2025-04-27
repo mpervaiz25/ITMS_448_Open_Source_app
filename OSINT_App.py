@@ -84,3 +84,15 @@ root.geometry("500x400")
 
 title = tk.Label(root, text="Bitcoin Market Dashboard", font=("Arial", 16, "bold"))
 title.pack(pady=10)
+
+price_label = tk.Label(root, text="Price:", font=("Arial", 14))
+price_label.pack(pady=5)
+
+cap_label = tk.Label(root, text="Market Cap & Volume:", font=("Arial", 12), wraplength=480, justify="left")
+cap_label.pack(pady=5)
+
+fear_label = tk.Label(root, text="Fear & Greed Index:", font=("Arial", 12))
+fear_label.pack(pady=5)
+
+news_label = tk.Label(root, text="News:", wraplength=480, justify="left")
+news_label.pack(pady=10)
