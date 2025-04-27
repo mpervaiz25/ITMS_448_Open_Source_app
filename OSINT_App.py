@@ -81,3 +81,6 @@ def update_all_data():
 root = tk.Tk()
 root.title("Bitcoin Market Dashboard")
 root.geometry("500x400")
+
+title = tk.Label(root, text="Bitcoin Market Dashboard", font=("Arial", 16, "bold"))
+title.pack(pady=10)
