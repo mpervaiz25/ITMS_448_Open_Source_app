@@ -24,3 +24,5 @@ def get_bitcoin_price():
         return f"${price:,.2f}"
     except Exception as e:
         return f"Price error: {e}"
+
+def get_market_data():
