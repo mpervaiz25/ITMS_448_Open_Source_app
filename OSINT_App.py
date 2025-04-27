@@ -53,3 +53,8 @@ def get_bitcoin_news():
         return f"News: {article['title']}"
     except Exception as e:
         return f"News error: {e}"
+    
+# GUI updater
+
+def update_all_data():
+    refresh_btn.config(state="disabled", text="Refreshing...")
