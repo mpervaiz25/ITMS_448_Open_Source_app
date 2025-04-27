@@ -58,3 +58,4 @@ def get_bitcoin_news():
 
 def update_all_data():
     refresh_btn.config(state="disabled", text="Refreshing...")
+    price_label.config(text="Fetching price...")
