@@ -26,3 +26,13 @@ def get_bitcoin_price():
         return f"Price error: {e}"
 
 def get_market_data():
+    try:
+        res = requests.get(COINCAP_URL, timeout=5)
+        res.raise_for_status()
+        data = res.json()["market_data"]
+        cap = data["market_cap"]["usd"]
+        volume = data["total_volume"]["usd"]
+        return f"Market Cap: ${cap:,.0f}\n24h Volume: ${volume:,.0f}"
+    except Exception as e:
+        return f"Market data error: {e}"
+
