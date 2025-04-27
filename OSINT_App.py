@@ -96,3 +96,6 @@ fear_label.pack(pady=5)
 
 news_label = tk.Label(root, text="News:", wraplength=480, justify="left")
 news_label.pack(pady=10)
+
+refresh_btn = ttk.Button(root, text="Refresh", command=update_all_data)
+refresh_btn.pack(pady=15)
