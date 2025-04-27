@@ -62,3 +62,9 @@ def update_all_data():
     cap_label.config(text="Fetching market cap...")
     fear_label.config(text="Fetching sentiment...")
     news_label.config(text="Fetching news...")
+
+    def task():
+        price = get_bitcoin_price()
+        market = get_market_data()
+        fear = get_fear_greed_index()
+        news = get_bitcoin_news()
