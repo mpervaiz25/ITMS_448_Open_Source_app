@@ -59,3 +59,6 @@ def get_bitcoin_news():
 def update_all_data():
     refresh_btn.config(state="disabled", text="Refreshing...")
     price_label.config(text="Fetching price...")
+    cap_label.config(text="Fetching market cap...")
+    fear_label.config(text="Fetching sentiment...")
+    news_label.config(text="Fetching news...")
