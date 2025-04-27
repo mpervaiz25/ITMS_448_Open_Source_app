@@ -44,5 +44,12 @@ def get_fear_greed_index():
         return f"Fear & Greed Index: {data['value']} ({data['value_classification']})"
     except Exception as e:
         return f"FGI error: {e}"
-
+    
 def get_bitcoin_news():
+    try:
+        res = requests.get(NEWS_API_URL, timeout=5)
+        res.raise_for_status()
+        article = res.json()["articles"][0]
+        return f"News: {article['title']}"
+    except Exception as e:
+        return f"News error: {e}"
