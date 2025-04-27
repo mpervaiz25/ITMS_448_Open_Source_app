@@ -36,3 +36,11 @@ def get_market_data():
     except Exception as e:
         return f"Market data error: {e}"
 
+def get_fear_greed_index():
+    try:
+        res = requests.get(FEAR_GREED_URL, timeout=5)
+        res.raise_for_status()
+        data = res.json()["data"][0]
+        return f"Fear & Greed Index: {data['value']} ({data['value_classification']})"
+    except Exception as e:
+        return f"FGI error: {e}"
