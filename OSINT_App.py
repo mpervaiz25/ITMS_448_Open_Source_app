@@ -99,3 +99,9 @@ news_label.pack(pady=10)
 
 refresh_btn = ttk.Button(root, text="Refresh", command=update_all_data)
 refresh_btn.pack(pady=15)
+
+# Start initial data load
+update_all_data()
+
+# Run the GUI main loop
+root.mainloop()
