@@ -68,3 +68,11 @@ def update_all_data():
         market = get_market_data()
         fear = get_fear_greed_index()
         news = get_bitcoin_news()
+
+        root.after(0, lambda: price_label.config(text=price))
+        root.after(0, lambda: cap_label.config(text=market))
+        root.after(0, lambda: fear_label.config(text=fear))
+        root.after(0, lambda: news_label.config(text=news))
+        root.after(0, lambda: refresh_btn.config(state="normal", text="Refresh"))
+
+    threading.Thread(target=task).start()
