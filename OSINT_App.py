@@ -76,3 +76,8 @@ def update_all_data():
         root.after(0, lambda: refresh_btn.config(state="normal", text="Refresh"))
 
     threading.Thread(target=task).start()
+
+# GUI setup and layout
+root = tk.Tk()
+root.title("Bitcoin Market Dashboard")
+root.geometry("500x400")
