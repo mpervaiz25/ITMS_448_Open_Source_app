@@ -1,3 +1,5 @@
+# Visit our README.md file for further directions on how to run our app
+
 import tkinter as tk
 from tkinter import ttk
 import requests
