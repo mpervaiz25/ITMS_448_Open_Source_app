@@ -14,6 +14,7 @@ The application features a "Refresh" button to pull the latest data without rest
 - `requests` library
 - `python-dotenv` library
 - Internet connection (to fetch live data)
+- Create a .env file and insert your own NewsAPI key
 
 You can install the required libraries by running the command below in your terminal/bash:
 
